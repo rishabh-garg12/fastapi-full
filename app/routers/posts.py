@@ -51,7 +51,7 @@ def get_post(id: int, db: Session = Depends(get_db)):
 
     if not post:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
-                            detail=f"Post  with id: {id} was not found")
+                            detail=f"Post with id: {id} was not found")
     return post
 
 
